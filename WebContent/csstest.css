@@ -26,8 +26,23 @@ mainField{
     bottom: 0;
 }
 
+.center{
+	justify-content:center;
+	align-items:center;
+	display:-webkit-flex;
+	
+}
 
 
+.introsize{
+	width: 400px;
+    height: 300px;
+}
+
+.cardheadersize{
+	width: 200px;
+    height: 200px;
+}
 
 #getPic {
 	margin: auto;
