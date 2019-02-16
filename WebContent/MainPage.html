@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,9 +6,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://softheonworkshop.azureedge.net/beta-2/workshop.blue.min.css">
 <link rel="stylesheet" type="text/css" href="csstest.css" />
-<script src = "test.js"></script>
+<script src = "MainPage.js"></script>
 </head>
 <body>
+<div>
 <nav sws-navbar--light role="navigation">
     <a href="#" sws-nav__logo>
         <img src="https://www.softheon.com/HTMLCache/media/Softheon_Logo_Color.png" alt="logo">
@@ -29,27 +29,24 @@
         </li>
     </ul>
 </nav>
+</div>
 
 <div>
-<leftside class="normal">
-<div>
-<div id="dropBox">
-<div>将图片拖放到此处...</div>
+	<leftside class="normal">
+		<button sws-button-fancy--secondary onclick = 'stepscondition()'>Secondary</button>
+		<button sws-button-fancy--secondary onclick = 'myFunction()'>show</button>
+	</leftside>
 </div>
-<input type="file" name="pic" accept="image/*" onchange="getPicture()" >  
-</div>
-      	
-        
 
-</leftside>
-</div>
 <div>
-<rightside class="normal">lllll.
-<button sws-button-fancy--secondary onclick = 'stepscondition()'>Secondary</button>
-<button sws-button-fancy--secondary onclick = 'myFunction()'>show</button>
-<div id = "demo"></div>
-</rightside>
-
+	<mainField class="normal">
+	<div>
+		<div id="getPic">
+			<div>Pick Image</div>
+		</div>
+		<input id="fileInput" type="file" accept = "image/png" onchange="uploadFile(files)">
+	</div>
+	</mainField>
 </div>
 
 
