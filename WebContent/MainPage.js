@@ -5,7 +5,7 @@ var img;
 var pic;
 var reader = new FileReader();
 
-function uploadFile(files) { 
+function uploadFile(files) {
     reader.onload = function (pic) {
     	img.style.backgroundImage = 'url(' + pic.target.result + ')';
     };
