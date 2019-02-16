@@ -2,57 +2,64 @@
 
 import { MultiStepperModule } from '@softheon/ng-workshop';
 @NgModule({
-    ...
-    imports: [MultiStepperModule]
-    ...
+...
+imports: [MultiStepperModule]
+...
 })
 export class MyAppModule { }
 
 
 leftside{
-position: absolute;
-left:0%;
+    position: absolute;
+    left:0%;
 }
 
 mainField{
-	text-align: center;
-	width: 300px;
+    text-align: center;
+    width: 300px;
     height: 300px;
-	margin: auto;
-	position: absolute;
-	top: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
 
+.center{
+    justify-content:center;
+    align-items:center;
+    display:-webkit-flex;
+
+}
 
 
+.introsize{
+    width: 400px;
+    height: 300px;
+}
+
+.cardheadersize{
+    width: 200px;
+    height: 200px;
+}
 
 #getPic {
-	margin: auto;
+    margin: auto;
     width: 300px;
     height: 300px;
-   	border: 6px dashed LightSkyBlue;
+    border: 6px dashed LightSkyBlue;
     border-radius: 6px;
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
-    }
-      
+}
+
 #getPic div {
-	margin: 125px 75px;
+    margin: 125px 75px;
     color: Silver;
     font-size: 25px;
 }
 input {
     margin: 15px;
 }
- 
-    
-      
-      
-      
-      
-      
-      
