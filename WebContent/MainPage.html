@@ -35,33 +35,34 @@
             </ul>
         </nav>
     </div>
-<!--<div class = "left">-->
 
-    <!--<button sws-button-fancy&#45;&#45;secondary onclick = 'stepscondition()'>Secondary</button>-->
-    <!--<button sws-button-fancy&#45;&#45;secondary onclick = 'myFunction()'>show</button>-->
 
-<!--</div>-->
+    <div><p sws-alert-bold--primary >Welcome to hack your cell. </p>
+         <p sws-alert-bold--secondary role="alert">Please click select to select your cell image. It will automatically upload to server and return the solution.</p>
 
-<div>
-    <mainField class="normal">
-        <div>
-            <div id="getPic">
-                <div id="baba" >Pick Image</div>
-            </div>
 
+
+    </div>
+    <div>
+        <mainField class="normal">
             <div>
-                <button sws-button-outline--secondary-lg>
-                    <input sws-form__input id="fileInput" type="file" accept = "image/*" onchange="uploadFile(files)" >
-                </button>
+                <div id="getPic">
+                    <div id="imageText" >Pick Image</div>
+                </div>
+
+                <div>
+                    <div sws-button--primary>
+                        <input sws-form__input id="fileInput" type="file" accept = "image/*" onchange="uploadFile(files)" >
+                    </div>
+                </div>
+
+
+
+
+
             </div>
-
-
-
-
-
-        </div>
-    </mainField>
-</div>
+        </mainField>
+    </div>
 
 
 </body>
