@@ -13,7 +13,7 @@ function uploadFile(files) {
     var req = new XMLHttpRequest();
     var url = "https://www.googleapis.com/upload/storage/v1/b/hackathon2019/o?uploadType=media&name="+files[0].name;
     req.open("POST",url);
-    req.setRequestHeader("Authorization", "Bearer ya29.GluzBkFWd862dxlUe3BJ0CGLKq-oroHO0GwMoJ5kapyE6OBQQeCwfjE1gVGw7WEt9aQ-Hh7bdo_PE08_OoBIWdayL54TBtr8d4bSlH6xnIOB3BYdCAYIurBafm8J");
+    req.setRequestHeader("Authorization", "Bearer ya29.GluzBiEsiljL0ZFDQwgYkrtqbwa7aPQu1mJ4V1JR5wa8G4-UPj2R6yV32EF8j4JxejLPNwMfEvpCSd3YhSikGWWmfUuC4g7a_5DBvWv_I3nivrBQ8EJqr2NkfqTj");
     req.setRequestHeader("Content-Type", files[0].type);
     var blob = new Blob(files);
     req.send(blob);
