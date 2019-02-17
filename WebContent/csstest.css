@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-import { MultiStepperModule } from '@softheon/ng-workshop';
-@NgModule({
-...
-imports: [MultiStepperModule]
-...
-})
-export class MyAppModule { }
+/*import { MultiStepperModule } from '@softheon/ng-workshop';*/
+/*@NgModule({*/
+/*...*/
+/*imports: [MultiStepperModule]*/
+/*...*/
+/*})*/
+/*export class MyAppModule { }*/
 
 
 leftside{

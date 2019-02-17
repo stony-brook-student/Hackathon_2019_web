@@ -10,6 +10,23 @@ function uploadFile(files) {
     	img.style.backgroundImage = 'url(' + pic.target.result + ')';
     };
     reader.readAsDataURL(files[0]);
+    var req = new XMLHttpRequest();
+    var url = "https://www.googleapis.com/upload/storage/v1/b/hackathon2019/o?uploadType=media&name="+files[0].name;
+    req.open("POST",url);
+    req.setRequestHeader("Authorization", "Bearer ya29.GluzBuaHEAd_DS_L443PZ_nmPdqEA59LNs7OxVKcZFX5RScvOeh24PoA6BmihVu7ua9rdDlm1DQmhQxJM50SFFEuzbwJHS-bs4mWVNkIYtUeryut0zOfjaxei4Ib");
+    req.setRequestHeader("Content-Type", files[0].type);
+    var blob = new Blob(files);
+    req.send(blob);
+
+    req.onreadystatechange = function () {
+        if(this.readyState==4 && this.status==200){
+            var json = JSON.parse(req.responseText);
+            console.log(json.id);
+            // send the  file  name to your python
+        }
+    };
+    var element = document.getElementById("baba");
+
 }
 
 window.onload = function() {

@@ -7,21 +7,49 @@
           href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://softheonworkshop.azureedge.net/beta-2/workshop.blue.min.css">
+    <!--<link rel="stylesheet"-->
+          <!--href="https://softheonworkshop.azureedge.net/beta-2/workshop.blue.min.css">-->
+    <link rel="stylesheet" href="https://softheonworkshop.azureedge.net/alpha-9/workshop.dark.min.css">
+
     <link rel="stylesheet" type="text/css" href="csstest.css" />
 </head>
 <body>
 <div>
-    <nav sws-navbar--light role="navigation">
-        <a href="#" sws-nav__logo> <img
-                src="https://www.softheon.com/HTMLCache/media/Softheon_Logo_Color.png"
-                alt="logo">
-        </a>
+    <nav sws-nav role="navigation">
         <ul>
-            <li><a sws-nav-link href="AboutPage.html">About Us</a></li>
-            <li><a sws-nav-link href="MainPage.html">Products</a></li>
-
+            <li sws-logo style="height: 64px;">
+                <a>
+                    <h3 m-a-0 workshop>
+                        <img style="height:48px" src=" https://softheonworkshopstorage.blob.core.windows.net/workshopcontainer/workshop-logo-anvil-white.svg"> Workshop
+                    </h3>
+                </a>
+            </li>
+            <li>
+                <a href="AboutPage.html">About us</a>
+            </li>
+            <li>
+                <a>Services</a>
+            </li>
+            <li>
+                <a>Contact</a>
+            </li>
+            <li>
+                <a>Location</a>
+            </li>
+            <li sws-menu>
+                <a>Groovy?</a>
+                <div sws-menu-items>
+                    <div sws-menu-item>
+                        <a>Test AA</a>
+                    </div>
+                    <div sws-menu-item>
+                        <a>Test B</a>
+                    </div>
+                    <div sws-menu-item>
+                        <a>Test CCCC</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
 </div>
@@ -54,40 +82,92 @@
     </div>
 
     <div class="center">
-        <div sws-card>
-            <h4 m-b-0 m-t-0>Runzhe Yang</h4>
-            <div sws-hr-sm--bold></div>
-            <p>
-                <a href="mailto: runzhe.yang@stonybrook.edu">Email:
-                    Runzhe.yang@stonybrook.edu</a>
-            </p>
-        </div>
-        <div sws-card>
-            <h4 m-b-0 m-t-0>Yifan Wang</h4>
-            <div sws-hr-sm--bold></div>
-            <p>
-                <a href="mailto: yifanwang@cs.stonybrook.edu">Email:
-                    yifanwang@cs.stonybrook.edu</a>
-            </p>
-        </div>
-        <div sws-card>
-            <h4 m-b-0 m-t-0>Zhaowen Huang</h4>
-            <div sws-hr-sm--bold></div>
-            <p>
-                <a href="mailto: huangzw18@mails.tsinghua.edu.cn">Email:
-                    huangzw18@mails.tsinghua.edu.cn</a>
-            </p>
-        </div>
+        <!--<div sws-card>-->
+            <!--<h4 m-b-0 m-t-0>Runzhe Yang</h4>-->
+            <!--<div sws-hr-sm&#45;&#45;bold></div>-->
+            <!--<p>-->
+                <!--<a href="mailto: runzhe.yang@stonybrook.edu">Email:-->
+                    <!--Runzhe.yang@stonybrook.edu</a>-->
+            <!--</p>-->
+        <!--</div>-->
+        <!--<div sws-card>-->
+            <!--<h4 m-b-0 m-t-0>Yifan Wang</h4>-->
+            <!--<div sws-hr-sm&#45;&#45;bold></div>-->
+            <!--<p>-->
+                <!--<a href="mailto: yifanwang@cs.stonybrook.edu">Email:-->
+                    <!--yifanwang@cs.stonybrook.edu</a>-->
+            <!--</p>-->
+        <!--</div>-->
+        <!--<div sws-card>-->
+            <!--<h4 m-b-0 m-t-0>Zhaowen Huang</h4>-->
+            <!--<div sws-hr-sm&#45;&#45;bold></div>-->
+            <!--<p>-->
+                <!--<a href="mailto: huangzw18@mails.tsinghua.edu.cn">Email:-->
+                    <!--huangzw18@mails.tsinghua.edu.cn</a>-->
+            <!--</p>-->
+        <!--</div>-->
 
-        <div sws-card>
-            <h4 m-b-0 m-t-0>Yingnan li</h4>
-            <div sws-hr-sm--bold></div>
-            <p>
-                <a href="mailto: Yingnan.li@stonybrook.edu">Email:
-                    Yingnan.li@stonybrook.edu</a>
-            </p>
+        <!--<div sws-card>-->
+            <!--<h4 m-b-0 m-t-0>Yingnan li</h4>-->
+            <!--<div sws-hr-sm&#45;&#45;bold></div>-->
+            <!--<p>-->
+                <!--<a href="mailto: Yingnan.li@stonybrook.edu">Email:-->
+                    <!--Yingnan.li@stonybrook.edu</a>-->
+            <!--</p>-->
+        <!--</div>-->
+        <div sws-card--square>
+            <div sws-card__content>
+                <div sws-card__header__img sws-default-banner-img>
+                    <h4 m-b-10>User Profile Name</h4>
+                </div>
+                <p m-t-25>
+                    <i text-primary class="fas fa-phone"></i> +1 555-555-5555</p>
+                <p>
+                    <i text-primary class="fas fa-at"></i> loremipsum@loremipsum.lorem</p>
+                <p>
+                    <i text-primary class="fab fa-twitter"></i> @loremipsum</p>
+            </div>
+        </div>
+        <div sws-card--square>
+            <div sws-card__content>
+                <div sws-card__header__img sws-default-banner-img>
+                    <h4 m-b-10>User Profile Name</h4>
+                </div>
+                <p m-t-25>
+                    <i text-primary class="fas fa-phone"></i> +1 555-555-5555</p>
+                <p>
+                    <i text-primary class="fas fa-at"></i> loremipsum@loremipsum.lorem</p>
+                <p>
+                    <i text-primary class="fab fa-twitter"></i> @loremipsum</p>
+            </div>
+        </div>
+        <div sws-card--square>
+            <div sws-card__content>
+                <div sws-card__header__img sws-default-banner-img>
+                    <h4 m-b-10>User Profile Name</h4>
+                </div>
+                <p m-t-25>
+                    <i text-primary class="fas fa-phone"></i> +1 555-555-5555</p>
+                <p>
+                    <i text-primary class="fas fa-at"></i> loremipsum@loremipsum.lorem</p>
+                <p>
+                    <i text-primary class="fab fa-twitter"></i> @loremipsum</p>
+            </div>
+        </div>
+        <div sws-card--square>
+            <div sws-card__content>
+                <div sws-card__header__img sws-default-banner-img>
+                    <h4 m-b-10>User Profile Name</h4>
+                </div>
+
+                <p>
+                    <i text-primary class="fas fa-at"></i> loremipsum@loremipsum.lorem</p>
+
+            </div>
         </div>
     </div>
+
 </div>
+
 </body>
 </html>
