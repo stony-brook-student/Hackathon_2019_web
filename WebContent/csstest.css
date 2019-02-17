@@ -27,35 +27,19 @@ mainField{
 }
 
 .center{
-<<<<<<< HEAD
-	justify-content:center;
-	align-items:center;
-	display:-webkit-flex;
-	
-=======
     justify-content:center;
     align-items:center;
     display:-webkit-flex;
-
->>>>>>> yingnan
 }
 
 
 .introsize{
-<<<<<<< HEAD
-	width: 400px;
-=======
     width: 400px;
->>>>>>> yingnan
     height: 300px;
 }
 
 .cardheadersize{
-<<<<<<< HEAD
-	width: 200px;
-=======
     width: 200px;
->>>>>>> yingnan
     height: 200px;
 }
 
